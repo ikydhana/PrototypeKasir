@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityDaftar">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_sew" />
+
+    <TextView
+        android:id="@+id/titleDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:text="Daftar Akun "
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleDaftar"
+        android:layout_marginTop="0dp"
+        android:text="Username : "
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleDaftar"
+        android:layout_toRightOf="@id/tvUsername"
+        android:hint="Username Anda"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtUsername"
+        android:layout_marginTop="0dp"
+        android:text="Password : "
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtUsername"
+        android:layout_toRightOf="@id/tvPassword"
+        android:hint="Password Anda"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPassword"
+        android:layout_marginTop="0dp"
+        android:text="Email : "
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPassword"
+        android:layout_toRightOf="@id/tvEmail"
+        android:hint="Email Anda"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tvPic"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtEmail"
+        android:layout_marginTop="0dp"
+        android:text="No Telpon : "
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/edtPic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtEmail"
+        android:layout_toRightOf="@id/tvPic"
+        android:hint="No Telepon Anda"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvAlamat"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPic"
+        android:layout_marginTop="0dp"
+        android:text="Alamat : "
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/edtAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPic"
+        android:layout_toRightOf="@id/tvAlamat"
+        android:hint="Alamat Usaha Anda"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnRegis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtAlamat"
+        android:layout_centerHorizontal="true"
+        android:text="Daftar" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtAlamat"
+        android:layout_toRightOf="@id/btnRegis"
+        android:text="Kembali" />
+</RelativeLayout>

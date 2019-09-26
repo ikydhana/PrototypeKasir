@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="Sew Foodtruck"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvJudul"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        tools:srcCompat="@drawable/logo_sew" />
+
+    <EditText
+        android:id="@+id/edtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/user"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtUser"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="@string/pass"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="511dp" />
+
+    <Button
+        android:id="@+id/btnMasuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPass"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="@string/masuk"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <Button
+        android:id="@+id/btnDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPass"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@id/btnMasuk"
+        android:text="@string/daftar"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDaftar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:gravity="bottom"
+        android:text="@string/lupa" />
+</RelativeLayout>
